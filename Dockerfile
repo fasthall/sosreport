@@ -8,4 +8,4 @@ RUN git clone git://github.com/sosreport/sos.git
 WORKDIR /sos
 RUN pip install -r requirements.txt
 
-CMD ["/bin/bash", "-c", "./sosreport -a --config ./sos.conf --batch"]
+CMD ["/bin/bash", "-c", "./sosreport -a --config ./sos.conf --batch --quiet"]
